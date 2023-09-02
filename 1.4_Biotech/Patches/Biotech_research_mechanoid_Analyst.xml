@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>Biotech research mechanoid - Analyst</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="EA_Research_1"]/researchMods/li[@Class="ExpertiseAugmentation.EA_ResearchMod"]/MechsToAugment</xpath>
+					<value>
+						<li>Mech_Analyst</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

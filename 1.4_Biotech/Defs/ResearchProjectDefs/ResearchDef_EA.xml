@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef Abstract="True" Name="EA_Base">
+		<requiresMechanitor>true</requiresMechanitor>
+		<description>Upgrades worker robots skill expertise by 2 level.</description>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techLevel>Ultra</techLevel>
+		<tab>Main</tab>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="EA_Base">
+		<defName>EA_Research_1</defName>
+		<label>Expertise Augmentation (Upgrade 1)</label>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li>UltraMechtech</li>
+		</prerequisites>
+		<researchViewX>20.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<researchMods>
+			<li Class="ExpertiseAugmentation.EA_ResearchMod">
+				<IncreaseLevelBy>2</IncreaseLevelBy>
+				<MaxLevel>20</MaxLevel>
+				<MechsToAugment>
+					<li>Mech_Constructoid</li>
+					<li>Mech_Lifter</li>
+					<li>Mech_Fabricor</li>
+					<li>Mech_Agrihand</li>
+					<li>Mech_Cleansweeper</li>
+					<li>Mech_Paramedic</li>
+					<li>Mech_Tunneler</li>
+					<li>Mech_Constructoid</li>
+				</MechsToAugment>
+				<ResearchDefs>
+					<li>EA_Research_1</li>
+					<li>EA_Research_2</li>
+					<li>EA_Research_3</li>
+					<li>EA_Research_4</li>
+					<li>EA_Research_5</li>
+				</ResearchDefs>
+			</li>
+		</researchMods>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="EA_Base">
+		<defName>EA_Research_2</defName>
+		<label>Expertise Augmentation (Upgrade 2)</label>
+		<baseCost>6000</baseCost>
+		<prerequisites>
+			<li>EA_Research_1</li>
+		</prerequisites>
+		<researchViewX>21.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="EA_Base">
+		<defName>EA_Research_3</defName>
+		<label>Expertise Augmentation (Upgrade 3)</label>
+		<baseCost>8000</baseCost>
+		<prerequisites>
+			<li>EA_Research_2</li>
+		</prerequisites>
+		<researchViewX>22.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="EA_Base">
+		<defName>EA_Research_4</defName>
+		<label>Expertise Augmentation (Upgrade 4)</label>
+		<baseCost>10000</baseCost>
+		<prerequisites>
+			<li>EA_Research_3</li>
+		</prerequisites>
+		<researchViewX>23.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="EA_Base">
+		<defName>EA_Research_5</defName>
+		<label>Expertise Augmentation (Upgrade 5)</label>
+		<baseCost>12000</baseCost>
+		<prerequisites>
+			<li>EA_Research_4</li>
+		</prerequisites>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+</Defs>

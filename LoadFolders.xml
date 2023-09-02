@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.4>
+    <li IfModActive="Ludeon.Rimworld.Biotech">1.4_Biotech</li>
+  </v1.4>
+</loadFolders>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Expertise Augmentation</name>
+  <author>StatistNo1</author>
+  <packageId>StatistNo1.ExpertiseAugmentation</packageId>
+  <description>This mod provides 5 researchprojects that allow you to upgrade the workskills of your mechs.\nEach project increases the skill by 2 points.</description>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions> 
+</ModMetaData>
